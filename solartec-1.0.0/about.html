@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Green Solution - Modelo de site de energia renovável</title>
+    <title>Green Solution</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -48,23 +48,25 @@
             <div class="col-lg-7 px-5 text-start">
                 <div class="h-100 d-inline-flex align-items-center me-4">
                     <small class="fa fa-map-marker-alt text-primary me-2"></small>
-                    <small>Av. Almeida Garret, 267 – Jd. Nossa Senhora Auxiliadora, Campinas, São Paulo, Brasil</small>
+                    <small>Campinas São Paulo</small>
                 </div>
                 <div class="h-100 d-inline-flex align-items-center">
                     <small class="far fa-clock text-primary me-2"></small>
-                    <small>Mon - Fri : 09.00 AM - 09.00 PM</small>
+                    <small id="current_date">
+                        <script>
+                            document.getElementById("current_date").innerHTML = Date();
+                        </script>
+                    </small>
                 </div>
             </div>
             <div class="col-lg-5 px-5 text-end">
                 <div class="h-100 d-inline-flex align-items-center me-4">
                     <small class="fa fa-phone-alt text-primary me-2"></small>
-                    <small> 0800 345 6789</small>
+                    <small>+55 (19) 991265849</small>
                 </div>
                 <div class="h-100 d-inline-flex align-items-center mx-n2">
-                    <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href="https://pt-br.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-square btn-link rounded-0" href=""><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href="https://www.linkedin.com/in/vinícius-lazarini-pecchia-0060301a1/"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-square btn-link rounded-0" href="instagram.com/vini.lazarini"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
@@ -86,19 +88,9 @@
                 <a href="about.html" class="nav-item nav-link active">Sobre</a>
                 <a href="service.html" class="nav-item nav-link">Serviços</a>
                 <a href="project.html" class="nav-item nav-link">Projetos</a>
-                <div class="nav-item dropdown">
-                    <!-- <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a> -->
-                    <div class="dropdown-menu bg-light m-0">
-                        <a href="feature.html" class="dropdown-item">Feature</a>
-                        <a href="quote.html" class="dropdown-item">Free Quote</a>
-                        <a href="team.html" class="dropdown-item">Our Team</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="404.html" class="dropdown-item">404 Page</a>
-                    </div>
-                </div>
-                <a href="contact.html" class="nav-item nav-link">Contatos</a>
-            </div>
-            <a href="project.html" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Obtenha um projeto<i class="fa fa-arrow-right ms-3"></i></a>
+                <a href="contact.html" class="nav-item nav-link">Contato</a>
+                <a href="project.html" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Obtenha um projeto<i class="fa fa-arrow-right ms-3"></i></a>
+            </div>         
         </div>
     </nav>
     <!-- Navbar End -->
@@ -132,7 +124,6 @@
                         <h1 class="mb-0" data-toggle="counter-up">3453</h1>
                     </div>
                     <h5 class="mb-3">Clientes satisfeitos</h5>
-                    <span>Estudo da Green Solution indica que maior porção dos clientes empresariais compraram sistemas fotovoltaicos devido, sobretudo, à economia.</span>
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
                     <div class="d-flex align-items-center mb-4">
@@ -142,7 +133,6 @@
                         <h1 class="mb-0" data-toggle="counter-up">4234</h1>
                     </div>
                     <h5 class="mb-3">Projetos concluídos</h5>
-                    <span>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit</span>
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
                     <div class="d-flex align-items-center mb-4">
@@ -152,7 +142,6 @@
                         <h1 class="mb-0" data-toggle="counter-up">3123</h1>
                     </div>
                     <h5 class="mb-3">Prêmios ganhos</h5>
-                    <span>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit</span>
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
                     <div class="d-flex align-items-center mb-4">
@@ -162,7 +151,6 @@
                         <h1 class="mb-0" data-toggle="counter-up">1831</h1>
                     </div>
                     <h5 class="mb-3">Trabalhadores Especialistas</h5>
-                    <span>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit</span>
                 </div>
             </div>
         </div>
@@ -209,11 +197,6 @@
                     <div class="team-item rounded overflow-hidden">
                         <div class="d-flex">
                             <img class="img-fluid w-75" src="img/team-1.jpg" alt="">
-                            <div class="team-social w-25">
-                                <a class="btn btn-lg-square btn-outline-primary rounded-circle mt-3" href="https://pt-br.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-lg-square btn-outline-primary rounded-circle mt-3" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-lg-square btn-outline-primary rounded-circle mt-3" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-                            </div>
                         </div>
                         <div class="p-4">
                             <h5>Roberto Pereira Barreto</h5>
@@ -225,11 +208,6 @@
                     <div class="team-item rounded overflow-hidden">
                         <div class="d-flex">
                             <img class="img-fluid w-75" src="img/team-2.jpg" alt="">
-                            <div class="team-social w-25">
-                                <a class="btn btn-lg-square btn-outline-primary rounded-circle mt-3" href="https://pt-br.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-lg-square btn-outline-primary rounded-circle mt-3" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-lg-square btn-outline-primary rounded-circle mt-3" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-                            </div>
                         </div>
                         <div class="p-4">
                             <h5>Daniel Mendonça Cruz</h5>
@@ -241,11 +219,6 @@
                     <div class="team-item rounded overflow-hidden">
                         <div class="d-flex">
                             <img class="img-fluid w-75" src="img/team-3.jpg" alt="">
-                            <div class="team-social w-25">
-                                <a class="btn btn-lg-square btn-outline-primary rounded-circle mt-3" href="https://pt-br.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-lg-square btn-outline-primary rounded-circle mt-3" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-lg-square btn-outline-primary rounded-circle mt-3" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-                            </div>
                         </div>
                         <div class="p-4">
                             <h5>Matheus Feliciano </h5>
